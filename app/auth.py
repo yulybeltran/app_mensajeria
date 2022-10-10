@@ -138,7 +138,7 @@ def register():
         flash(error)
         return render_template('auth/login.html') 
     except:
-        flash('error no controlado')
+       
         return render_template('auth/register.html')
     
 @bp.route('/confirm', methods=('GET', 'POST'))
